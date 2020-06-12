@@ -49,7 +49,7 @@ app.get('/apps', (req, res) => {
     }
 
     if(genres){
-        console.log(genres)
+
         results = results.filter(app => app.Genres.includes(genres))
     }
 
