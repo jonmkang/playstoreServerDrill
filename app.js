@@ -49,7 +49,6 @@ app.get('/apps', (req, res) => {
     }
 
     if(genres){
-
         results = results.filter(app => app.Genres.includes(genres))
     }
 
@@ -57,6 +56,4 @@ app.get('/apps', (req, res) => {
                                         
 })
 
-app.listen(8000, () => {
-    console.log('Server started on PORT 8000');
-})
+module.exports = app;
